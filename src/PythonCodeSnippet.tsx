@@ -1,6 +1,10 @@
 import React from 'react';
 
-function PythonCodeSnippet(props: any) {
+interface PythonCodeSnippetProps {
+  codeSample: object
+}
+
+function PythonCodeSnippet(props: PythonCodeSnippetProps) {
   return (
     <div>
       <h3>Python Code Example</h3>

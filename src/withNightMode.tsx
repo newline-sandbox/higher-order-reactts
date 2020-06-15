@@ -1,6 +1,10 @@
 import React from 'react'
 
-const withNightMode = (WrappedComponent: any) => (props: any) => {
+interface CodeComponentProps {
+  codeSample: object
+}
+
+const withNightMode = (WrappedComponent: any) => (props: CodeComponentProps) => {
   return(
     <div style={{backgroundColor: 'wheat'}}>
       <WrappedComponent {...props} />
