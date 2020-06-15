@@ -1,6 +1,10 @@
 import React from 'react';
 
-function JSCodeSnippet(props: any) {
+interface JSCodeSnippetProps {
+  codeSample: object
+}
+
+function JSCodeSnippet(props: JSCodeSnippetProps) {
   return (
     <div>
       <h3>JavaScript Code Example</h3>
